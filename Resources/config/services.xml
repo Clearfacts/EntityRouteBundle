@@ -9,7 +9,7 @@
     </parameters>
 
     <services>
-        <service id="tactics_entity_route.resolver" class="%tactics_entity_route.resolver.class%">
+        <service id="tactics.entity_route_resolver" class="%tactics_entity_route.resolver.class%">
             <argument type="service" id="router" />
             <argument type="service" id="annotation_reader" />
         </service>
