@@ -76,12 +76,15 @@ class EntityRouteResolver
         $parameters = array();
 
         foreach ($reflection->getProperties() as $property) {
-            $propertyAnnotation = $this->reader->getPropertyAnnotation($property, 'Tactics\Bundle\EntityRouteBundle\Annotation\EntityRoute');
+            $propertyAnnotation = $this->reader->getPropertyAnnotation($property, 'Tactics\Bundle\EntityRouteBundle\Annotation\EntityRouteParameter');
 
             if (null !== $propertyAnnotation) {
+                $property->setAccessible(true);
                 $parameters[$property->getName()] = $property->getValue($entity);
             }
         }
+
+        return $parameters;
     }
 
     /**
