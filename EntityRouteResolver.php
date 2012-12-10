@@ -2,7 +2,7 @@
 
 namespace Tactics\Bundle\EntityRouteBundle;
 
-use Doctrine\Common\Annotations\AnnotationReader;
+use Doctrine\Common\Annotations\Reader;
 use Doctrine\Common\Annotations\AnnotationException;
 use Symfony\Component\Routing\RouterInterface;
 
@@ -24,7 +24,7 @@ class EntityRouteResolver
      * @param Symfony\Component\Routing\RouterInterface $router
      * @param Doctrine\Common\Annotations\AnnotationReader $annotationReader
      */
-    public function __construct(RouterInterface $router, AnnotationReader $annotationReader)
+    public function __construct(RouterInterface $router, Reader $annotationReader)
     {
         $this->router = $router;
         $this->reader = $annotationReader;
