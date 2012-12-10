@@ -48,6 +48,19 @@ class EntityRouteResolver
     }
 
     /**
+     * Check whether or not entity has EntityRoute annotation defined.
+     *
+     * @return boolean
+     */
+    public function hasEntityRoute($entity)
+    {
+        return null !== $this->reader->getClassAnnotation(
+            $this->getReflectionClass($entity),
+            'Tactics\Bundle\EntityRouteBundle\Annotation\EntityRoute'
+        );
+    }
+
+    /**
      * Retrieve route name.
      *
      * @param \ReflectionClass $reflection
