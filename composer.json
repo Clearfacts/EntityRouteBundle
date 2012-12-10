@@ -1,0 +1,23 @@
+{
+  "name": "tactics/entity-route-bundle",
+  "description": "EntityRouteBundle",
+  "keywords": ["entity", "route", "annotation", "doctrine"],
+  "type": "symfony-bundle",
+  "license": "",
+  "authors": [{
+    "name": "Aaron Muylaert",
+    "email": "aaron@tactics.be"
+  }],
+  "require": {
+    "symfony/symfony": "2.1.*",
+    "doctrine/orm": ">=2.2.3,<2.4-dev",
+    "doctrine/doctrine-bundle": "1.0.*"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-0": { "Tactics\\Bundle\\EntityRouteBundle": "" }
+  },
+  "target-dir": "Tactics/Bundle/EntityRouteBundle",
+  "minimum-stability": "dev"
+}
