@@ -55,7 +55,7 @@ class EntityRouteResolver
      */
     protected function getRouteName(\ReflectionClass $reflection)
     {
-        $annotation = $this->reader->getClassAnnotation($class, 'Tactics\Bundle\EntityRouteBundle\Annotation\EntityRoute');
+        $annotation = $this->reader->getClassAnnotation($reflection, 'Tactics\Bundle\EntityRouteBundle\Annotation\EntityRoute');
 
         if (null === $annotation) {
             throw new AnnotationException('Class annotation Tactics\Bundle\EntityRouteBundle\Annotation\EntityRoute not found.');
