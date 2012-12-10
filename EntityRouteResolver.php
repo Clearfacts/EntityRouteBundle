@@ -1,6 +1,6 @@
 <?php
 
-namespace Tactics\Bundle\EntityRouteResolerBundle;
+namespace Tactics\Bundle\EntityRouteBundle;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Annotations\AnnotationException;
@@ -40,13 +40,10 @@ class EntityRouteResolver
     {
         $reflection = $this->getReflectionClass($entity);
 
-        if (false === $annotation) {
-        }
-
         return $this->router->generate(
             $this->getRouteName($reflection),
             $this->getRouteParameters($reflection, $entity),
-            $absolute,
+            $absolute
         );
     }
 
