@@ -19,7 +19,7 @@ class EntityRouteParameter
      *
      * @param array $options The options.
      */
-    public function __construct(array $options)
+    public function __construct(array $options = array())
     {
         if (isset($options['name'])) {
             $this->name = $options['name'];
