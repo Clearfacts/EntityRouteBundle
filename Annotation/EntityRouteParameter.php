@@ -7,7 +7,7 @@ namespace Tactics\Bundle\EntityRouteBundle\Annotation;
  *
  * @author Aaron Muylaert <aaron@tactics.be>
  */
-class EntityRouteParameter extends \Doctrine\Common\Annotations\Annotation
+class EntityRouteParameter
 {
     /**
      * @var string $name
