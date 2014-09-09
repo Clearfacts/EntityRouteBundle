@@ -10,7 +10,7 @@
   }],
   "require": {
     "symfony/symfony": "~2.1",
-    "doctrine/doctrine-bundle": "@stable"
+    "doctrine/doctrine-bundle": "@stable",
     "doctrine/orm": "~2.2,>=2.2.3",
     "doctrine/doctrine-bundle": "~1.2"
   },
