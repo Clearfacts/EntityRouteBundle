@@ -9,7 +9,6 @@
     "email": "aaron@tactics.be"
   }],
   "require": {
-    "symfony/symfony": "~4.0",
     "doctrine/orm": "^2.5",
     "doctrine/doctrine-bundle": "^1.6"
   },
@@ -19,5 +18,5 @@
     "psr-0": { "Tactics\\Bundle\\EntityRouteBundle": "" }
   },
   "target-dir": "Tactics/Bundle/EntityRouteBundle",
-  "minimum-stability": "dev"
+  "minimum-stability": "stable"
 }
