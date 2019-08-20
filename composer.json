@@ -9,9 +9,11 @@
     "email": "aaron@tactics.be"
   }],
   "require": {
-    "symfony/symfony": "4.0",
     "doctrine/orm": "^2.6",
-    "doctrine/doctrine-bundle": "^1.6"
+    "doctrine/doctrine-bundle": "^1.6",
+    "symfony/config": "^4.0",
+    "symfony/http-kernel": "^4.0",
+    "symfony/dependency-injection": "^4.0"
   },
   "require-dev": {
   },
